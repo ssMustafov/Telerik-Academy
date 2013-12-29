@@ -1,3 +1,3 @@
 Telerik-Academy
 ===============
-Everythink I learned
+Everything I learned
