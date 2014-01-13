@@ -1,0 +1,25 @@
+﻿.one 
+{
+    list-style-type: upper-roman;
+}
+
+.two
+{
+    list-style-type: lower-latin;
+    
+}
+
+.three 
+{
+    list-style-type: circle;
+}
+
+.four 
+{
+    list-style-type: disc;
+}
+
+.two, .four, .five
+{
+    margin-left: -20px;
+}

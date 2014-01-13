@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFEE778C-1F4C-42EF-AAF2-3E53CB0BF918}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_07.AnyToAny</RootNamespace>
+    <AssemblyName>_07.AnyToAny</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01. DecimalToBinary\01. DecimalToBinary.csproj">
+      <Project>{A3BC4E4F-2E08-410A-818A-1F7DA2590C33}</Project>
+      <Name>01. DecimalToBinary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\02. BinaryToDecimal\02. BinaryToDecimal.csproj">
+      <Project>{9EA3E29C-9CB9-44AD-9817-58D474BA4845}</Project>
+      <Name>02. BinaryToDecimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03. DecimalToHex\03. DecimalToHex.csproj">
+      <Project>{229A7BA8-7976-460C-9079-57B03F621827}</Project>
+      <Name>03. DecimalToHex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\04. HexToDecimal\04. HexToDecimal.csproj">
+      <Project>{994DD3C6-C2C2-4515-855F-1FFDC10BA327}</Project>
+      <Name>04. HexToDecimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\05. HexToBinary\05. HexToBinary.csproj">
+      <Project>{AEF9427C-8097-4DED-AF38-1ADB06367BDA}</Project>
+      <Name>05. HexToBinary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\06. BinaryToHex\06. BinaryToHex.csproj">
+      <Project>{0684EFD6-8254-48D8-B16C-B06491CB016D}</Project>
+      <Name>06. BinaryToHex</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

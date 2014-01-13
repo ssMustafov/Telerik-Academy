@@ -1,0 +1,14 @@
+﻿.paragraph 
+{
+    display: inline;
+}
+
+.list
+{
+    display: inline;
+}
+
+.list li:before
+{
+    content: " - ";
+}

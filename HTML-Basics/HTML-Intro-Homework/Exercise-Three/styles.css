@@ -1,0 +1,45 @@
+﻿body 
+{
+    background-color: #ccecff;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header a
+{
+    padding: 0px 10px;
+}
+
+h1 
+{
+    font-style: italic;
+}
+
+.name 
+{
+    margin-top: 50px;
+}
+
+.olist
+{
+    font-style: italic;
+}
+
+.sublist
+{
+    font-style: normal;
+    list-style-type: none;
+}
+
+.ulist
+{
+    font-style: italic;
+    list-style-type: none;
+}
+
+span 
+{
+    color: blue;
+    text-decoration: underline;
+}
