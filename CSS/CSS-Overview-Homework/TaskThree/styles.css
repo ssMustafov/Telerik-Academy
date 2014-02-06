@@ -1,0 +1,46 @@
+body {
+	background: #a9a9a9;
+	font-family: serif;
+	font-size: 18px;
+}
+
+body > header {
+	width: 300px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #fafad2;
+	font-size: 28px;
+}
+
+h1.head {
+	font-size: 46px;
+}
+
+nav > ul li a{
+	color: #fafad2;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+nav > ul li:last-child {
+	text-decoration: underline;
+}
+
+nav > ul {
+	list-style: none;
+}
+
+footer {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+footer.foot {
+	font-size: 18px;
+	font-weight: normal;
+	width: 350px;
+	margin: 0 auto;
+}

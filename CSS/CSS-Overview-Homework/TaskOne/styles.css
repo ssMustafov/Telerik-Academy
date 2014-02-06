@@ -1,0 +1,45 @@
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+table {
+	background: #595959;
+	color: #fff;
+	width: 300px;
+}
+
+th {
+	font-size: 20px;
+	color: #afb1a4;
+	text-align: left;
+	font-weight: normal;
+}
+
+td {
+	padding-top: 10px;
+}
+
+a {
+	color: #edf3aa;
+	text-decoration: none;
+}
+
+table .label {
+	font-style: italic;
+	width: 120px;
+}
+
+.red {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.darkGrey {
+	color: #afb1a4;
+}
+
+.status {
+	color: #d56a28;
+	font-weight: bold;
+}
