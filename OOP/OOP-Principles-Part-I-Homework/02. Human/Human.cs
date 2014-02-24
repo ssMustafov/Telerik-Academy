@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _02.Human
+{
+    public  class Human
+    {
+        private string firstName;
+        private string lastName;
+
+        protected Human(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public string FirstName
+        {
+            get { return this.firstName; }
+        }
+
+        public string LastName
+        {
+            get { return this.lastName; }
+        }
+    }
+}

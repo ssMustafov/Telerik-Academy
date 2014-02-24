@@ -1,0 +1,132 @@
+body {
+	font-family: verdana, helvetica, sans serif;
+	font-size: 12px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+a {
+	color: #b5312f;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+nav {
+	width: 160px;
+	float: left;
+	margin-top: 30px;
+}
+
+section {
+	width: 600px;
+	float: left;
+	padding: 5px;
+}
+
+aside {
+	width: 180px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+
+nav ul li.title {
+	margin-top: 20px;
+	color: #900B09;
+	font-weight: bold;
+}
+
+nav ul li.title a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul li.title a:hover {
+	text-decoration: underline;
+}
+
+nav ul li a.home {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+section button {
+	width: 100px;
+}
+
+section, aside div, aside p {
+	border: 1px solid #c4c4c4;
+}
+
+section header {
+	border-bottom: 1px solid #9f9f9f;
+}
+
+section footer {
+	border-top: 1px solid #9f9f9f;
+	border-bottom: 1px solid #9f9f9f;
+}
+
+section article img {
+	float: left;
+	margin-right: 30px;
+}
+
+section article h3 {
+	background-color: #808080;
+	color: #fff;
+	padding-left: 5px;
+}
+
+aside p {
+	padding: 0;
+	margin: 0;
+}
+
+aside div, aside p {
+	padding: 5px;
+}
+
+aside div, aside p {
+	margin-top: 1px;
+}
+
+aside div h4 {
+	background-color: #808080;
+	color: #fff;
+	padding: 0;
+	margin-top: -5px;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+aside input[type='text'] {
+	width: 120px;
+}
+
+aside a {
+	display: inline-block;
+}
+
+aside button {
+	width: 120px;
+	height: 35px;
+	color: #00ADFF;
+}

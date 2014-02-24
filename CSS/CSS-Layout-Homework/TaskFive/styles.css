@@ -1,0 +1,36 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul {
+	text-align: center;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a{
+	padding: 0 5px;
+	color: #1DB7F1;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+section, aside {
+	display: inline-block;
+}
+
+section {
+	width: 700px;
+}
+
+aside {
+	width: 300px;
+}
+
+article img {
+	
+}
