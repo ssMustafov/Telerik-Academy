@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Compare arrays - Homework</title>
+	</head>
+<body>
+	<script>
+		var arr1 = ['a','b','z','p'];
+		var arr2 = ['a','b','z','u'];
+		
+		function compare(arr1, arr2) {
+			var length = arr1.length;
+			
+			for (var i=0; i<length; i++) {
+				if (arr1[i] !== arr2[i]) {
+					return false;
+				}
+			}
+			
+			return true;
+		}
+		
+		console.log(compare(arr1,arr2));
+	</script>
+</body>
+</html>

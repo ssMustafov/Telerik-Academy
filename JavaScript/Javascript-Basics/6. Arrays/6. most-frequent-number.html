@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Find most frequent number - Homework</title>
+	</head>
+<body>
+	<script>
+		function findMostFrequentNumber(arr) {
+			var bestNum = 0,
+				bestCounter = 1;
+			
+			for (var i=0; i<arr.length; i++) {
+				var counter = 1;
+				for (var j=i+1; j<arr.length; j++) {
+					if (arr[i] === arr[j]) {
+						counter++;
+					}
+				}
+				
+				if (counter > bestCounter) {
+					bestCounter = counter;
+					bestNum = arr[i];
+				}
+			}
+			
+			return bestNum + " (" + bestCounter + " times)";
+		}
+		
+		var arr = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3];
+		console.log(findMostFrequentNumber(arr));
+	</script>
+</body>
+</html>

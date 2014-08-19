@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Max sequence - Homework</title>
+	</head>
+<body>
+	<script>
+		var arr = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1];
+		
+		function findMaxSequence(arr) {
+			var bestCounter = 1,
+				bestNum = 0,
+				counter = 1;
+				
+			for (var i=0; i<arr.length-1; i++) {
+				if (arr[i] === arr[i+1]) {
+					counter++;
+				} else {
+					if (bestCounter < counter) {
+						bestCounter = counter;
+						bestNum = arr[i];
+					}
+					counter = 1;
+				}
+			}
+			
+			var newArr = new Array(bestCounter);
+			for (var i=0; i<bestCounter; i++) {
+				newArr[i] = bestNum;
+			}
+			
+			return newArr;
+		}
+		
+		console.log(findMaxSequence(arr));
+	</script>
+</body>
+</html>

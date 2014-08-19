@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Binary search - Homework</title>
+	</head>
+<body>
+	<script>	
+		function binarySearch(arr, value) {
+			var index = -1,
+				startIndex = 0,
+				stopIndex = arr.length - 1;
+			
+			while (startIndex <= stopIndex) {
+				var middle = Math.floor((startIndex + stopIndex) / 2, 10);
+				
+				if (arr[middle] < value) {
+					startIndex = middle + 1;
+				} else if (arr[middle] > value) {
+					stopIndex = middle - 1;
+				} else {
+					index = middle;
+					break;
+				}
+			}
+			
+			return index;
+		}
+		
+		var arr = [4, -1, 10, 4, 2, 0, 4, 4, 1, 2, 4, 9, 3];
+		arr.sort(function(a, b) {
+			return a - b;
+		});
+		console.log(binarySearch(arr, 9));
+	</script>
+</body>
+</html>

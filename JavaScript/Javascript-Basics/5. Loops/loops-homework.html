@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loops - Homework</title>
+	</head>
+<body>
+	<script>
+		function readNumber() {
+			return parseInt(prompt("Enter a number:"));
+		}
+	
+		function printNumsToN() {
+			var n = readNumber();
+		
+			for (var i=1; i<=n; i++) {
+				document.write(i + " ");
+			}
+			
+			document.write("<br/>");
+		}
+		
+		function printNotDivisibleByThreeAndSeven() {
+			var n = readNumber();
+		
+			for (var i=1; i<=n; i++) {
+				if (i % 3 === 0 && i % 7 === 0) {
+					document.write(i + " ");
+				}
+			}
+			document.write("<br/>");
+		}
+		
+		function min(arr) {
+			var min = arr[0];
+			for (var i=1; i<arr.length; i++) {
+				if (min > arr[i]) {
+					min = arr[i];
+				}
+			}
+			
+			document.write("Min: " + min);
+			document.write("<br/>");
+		}
+		
+		function max(arr) {
+			var max = arr[0];
+			for (var i=1; i<arr.length; i++) {
+				if (max < arr[i]) {
+					max = arr[i];
+				}
+			}
+			
+			document.write("max: " + max);
+			document.write("<br/>");
+		}
+		
+		function printProperties(obj) {
+			for (var prop in obj) {
+				document.write(prop + " => " + obj[prop] + "<br/>");
+			}
+		}
+		
+		printNumsToN();
+		printNotDivisibleByThreeAndSeven();
+		
+		var a = [234,5,1,0,1,-14012,252525,141,124,-10];
+		min(a);
+		max(a);
+		
+		printProperties(window);
+	</script>
+</body>
+</html>

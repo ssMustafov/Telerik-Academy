@@ -1,0 +1,35 @@
+<script>
+	var number = parseInt(prompt("Enter a number:"));
+	
+	var numberAsText = "";
+	var tens = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+	var hundreds = ["Ten", "Twenty", "Thirty", "Fourty", "Fifth", "Sixty", "Seventy", "Eighty", "Ninety"];
+	
+	if (number === 0) {
+		document.write("Zero");
+	}
+	
+	if (number >= 100 && number <= 999) {
+		var i = parseInt(number / 100);
+		
+		if (number % 100 === 0) {
+			numberAsText = numberAsText + tens[i - 1] + " Hundred ";
+		} else {
+			numberAsText = numberAsText + tens[i - 1] + " Hundred and "
+		}
+		
+		number = number % 100;
+	}
+	
+	if (number >= 20 && number <= 99) {
+		var i = parseInt(number / 10);
+		numberAsText = numberAsText + hundreds[i - 1] + " ";
+		number %= 10;
+	}
+	
+	if (number >= 1 && number <= 19) {
+		numberAsText = numberAsText + tens[number - 1];
+	}
+	
+	document.write(numberAsText);
+</script>

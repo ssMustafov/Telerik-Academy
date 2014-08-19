@@ -1,0 +1,26 @@
+<script>
+	var a = prompt("Enter coef A:");
+	var b = prompt("Enter coef B:");
+	var c = prompt("Enter coef C:");
+	
+	function calcDeterminant() {
+		return (b * b) - (4 * a * c);
+	}
+	
+	function printRoots() {
+		var determinant = calcDeterminant();
+		
+		if (determinant === 0) {
+			var x = (-b) / (2 * a);
+			document.write("There is one root: " + x);
+		} else if (determinant < 0) {
+			document.write("There are no real roots");
+		} else {
+			var x1 = ((-b) + Math.sqrt(determinant)) / (2 * a);
+			var x2 = ((-b) - Math.sqrt(determinant)) / (2 * a);
+			document.write("The roots are: " + x1 + "," + x2);
+		}
+	}
+	
+	printRoots();
+</script>
