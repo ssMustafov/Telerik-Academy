@@ -31,7 +31,6 @@ namespace _01.School
                 {
                     throw new ArgumentException("The discipline must be atleast 3 letters.");
                 }
-
                 this.name = value;
             }
         }
